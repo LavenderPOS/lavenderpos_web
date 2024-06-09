@@ -1,0 +1,53 @@
+export default function Footer() {
+    return (
+        <div className="Wrapper Wrapper_Footer flex flex-col justify-between space-y-10 bg-purple-300 p-10 rounded-lg lg:flex-row lg:space-y-0">
+            <div className="LeftSide">
+                <h1 className="text-2xl font-extrabold tracking-widest mb-5">
+                    Lavender Software Company
+                </h1>
+                <h3 className="text-lg font-semibold">
+                    Contact Information
+                </h3>
+                <ul>
+                    <li>
+                        Email: zarnihlawnoff@gmail.com
+                    </li>
+                    <li>
+                        Phone: +95 976 032 4118
+                    </li>
+                </ul>
+            </div>
+            <div className="MiddleSide">
+                <h3 className="text-xl font-semibold">
+                    Available Pages
+                </h3>
+                <ul>
+                    <li>
+                        Products
+                    </li>
+                    <li>
+                        Pricing
+                    </li>
+                    <li>
+                        Reports
+                    </li>
+                </ul>
+            </div>
+            <div className="RightSide">
+                <h3 className="text-xl font-semibold">
+                    Support the Developers
+                </h3>
+                <ul>
+                    <li>
+                        Buy Me A Coffee
+                    </li>
+                    <li>
+                        Pateron
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    )
+}

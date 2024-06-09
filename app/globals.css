@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+  font-family: "JetBrains Mono", monospace;
+}
+html {
+  margin: 1.25rem;
+  background-color: rgb(254, 249, 255);
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ICON {
+  filter: drop-shadow(0 0 4rem #9721f8);
+  transition: all 0.3s ease-in-out;
+
+}
+.ICON:hover {
+  transition: all 0.3s ease-in-out;
+  filter: drop-shadow(0 0 8rem #9721f8);
+}
+
+.ICON_FULL {
+  filter: drop-shadow(0 0 1rem #cc91fc);
+  transition: all 0.5s ease-in-out;
+
+}
+
+.ICON_FULL:hover {
+  transition: all 0.5s ease-in-out;
+  
+  filter: drop-shadow(0 0 3rem #cc91fc);
+}
+
+.grid-auto-fill {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  gap: 1rem;
+}
+
+a {
+  text-shadow: none;
+}
+a:hover {
+  text-shadow: 0 0 5px #fff,
+                         0 0 5px #fff,
+                         0 0 10px #d6b7ff,
+                         0 0 20px #a574ff,
+                         0 0 30px #9d7ef1,
+                         0 0 40px #fbf8ff,
+                         0 0 50px #a84aff;
+}
+
+.Linux_Icon:hover {
+  transition: all 0.3s ease-in-out;
+  filter: drop-shadow(0 0 1rem #ffcb87);
+}
+
+.Windows_Icon:hover {
+  transition: all 0.3s ease-in-out;
+  filter: drop-shadow(0 0 1rem #87f1ff);
+}
+
+.Mac_Icon:hover {
+  transition: all 0.3s ease-in-out;
+  filter: drop-shadow(0 0 1rem #87f1ff);
+}
