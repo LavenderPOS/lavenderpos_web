@@ -2,10 +2,13 @@
 
 * {
   font-family: "JetBrains Mono", monospace;
+  scroll-behavior: smooth;
+  scroll-timeline: cubic-bezier(10, 5, 7, 3);
 }
 html {
   margin: 1.25rem;
   background-color: rgb(254, 249, 255);
+  
 }
 
 
@@ -41,10 +44,10 @@ html {
   gap: 1rem;
 }
 
-a {
+.NavA {
   text-shadow: none;
 }
-a:hover {
+.NavA:hover {
   text-shadow: 0 0 5px #fff,
                          0 0 5px #fff,
                          0 0 10px #d6b7ff,

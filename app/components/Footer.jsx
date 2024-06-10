@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
     return (
         <div className="Wrapper Wrapper_Footer flex flex-col justify-between space-y-10 bg-purple-300 p-10 rounded-lg lg:flex-row lg:space-y-0">
@@ -10,7 +12,7 @@ export default function Footer() {
                 </h3>
                 <ul>
                     <li>
-                        Email: zarnihlawnoff@gmail.com
+                        Email: lavenderpos.lavender@gmail.com
                     </li>
                     <li>
                         Phone: +95 976 032 4118
@@ -23,13 +25,13 @@ export default function Footer() {
                 </h3>
                 <ul>
                     <li>
-                        Products
+                        <Link href="/#software">Software</Link>
                     </li>
                     <li>
-                        Pricing
+                        <Link href="/#pricing">Pricing</Link>
                     </li>
                     <li>
-                        Reports
+                        <Link href="/#report">Report</Link>
                     </li>
                 </ul>
             </div>

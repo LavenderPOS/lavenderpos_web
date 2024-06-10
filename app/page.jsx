@@ -4,6 +4,8 @@ import Mac_Icon from "./assets/mac.png";
 import Linux_Icon from "./assets/linux.png";
 import Windows_Icon from "./assets/windows.png";
 import Image from "next/image";
+import Link from "next/link";
+
 
 
 export default function Home() {
@@ -26,19 +28,20 @@ export default function Home() {
             All In One Point Of Sale System For Every Business Whether Large Or Small Even For The Non-Profit Usage.
           </p>
           <div className="buttonlist space-x-10 flex mx-10 justify-center md:mx-20">
-            <button className="p-4 font-semibold bg-slate-300 rounded-xl hover:font-extrabold hover:bg-slate-200 hover:italic">
+            <Link href={"#pricing"}><button className="p-4 font-semibold bg-slate-300 rounded-xl hover:font-extrabold hover:bg-slate-200 hover:italic">
               Learn More
-            </button>
-            <button className="p-4 font-semibold bg-purple-400 rounded-xl hover:font-extrabold hover:bg-purple-200 hover:italic">
+            </button></Link>
+
+            <Link href={"#software"}><button className="p-4 font-semibold bg-purple-400 rounded-xl hover:font-extrabold hover:bg-purple-200 hover:italic">
               Get Started
-            </button>
+            </button></Link>
           </div>
         </div>
       </section>
 
       <hr className="mb-20" />
 
-      <section className="Products mb-20 flex flex-col items-center">
+      <section id="software" className="Products mb-20 flex flex-col items-center">
 
         <div className="">
           <Image
@@ -51,7 +54,7 @@ export default function Home() {
         <div className="">
           <ul className="flex justify-evenly space-x-11">
             <li>
-              
+
               <Image
                 loading="lazy"
                 className="Windows_Icon w-20"
@@ -59,7 +62,7 @@ export default function Home() {
               />
             </li>
             <li>
-            <Image
+              <Image
                 loading="lazy"
                 className="Linux_Icon w-20"
                 src={Linux_Icon}
@@ -78,45 +81,56 @@ export default function Home() {
 
       <hr className="mb-20" />
 
-      <section className="Pricing mb-20">
+      <section id="pricing" className="Pricing mb-20">
         <h1 className="text-4xl font-black tracking-widest mb-7">Pricing</h1>
         <div className=" grid-auto-fill">
           <div className=" backdrop-blur-lg bg-purple-100 px-5 py-5 rounded-xl">
             <h1 className="text-center text-2xl tracking-widest font-semibold">Personal</h1>
             <p className="text-sm font-extralight text-center">Free</p>
-
-            <ul>
-              <li>
-                All In One Role
-              </li>
-            </ul>
+            
           </div>
           <div className=" backdrop-blur-lg bg-purple-100 px-5 py-5 rounded-xl">
             <h1 className="text-center text-2xl tracking-widest font-semibold">Adventure</h1>
             <p className="text-sm font-extralight text-center">Free Trial</p>
-
+            <div className="button_container flex justify-end">
+              <Link href="pages/payment" target="_blank">
+                <button className="mt-10 mr-3 p-4 font-semibold bg-purple-300 rounded-xl hover:font-extrabold hover:bg-purple-200 hover:italic">Purchase</button>
+              </Link>  
+            </div>
           </div>
           <div className=" backdrop-blur-lg bg-purple-100 px-5 py-5 rounded-xl">
             <h1 className="text-center text-2xl tracking-widest font-semibold">Indie</h1>
             <p className="text-sm font-extralight text-center">$10 per month</p>
-
+            <div className="button_container flex justify-end">
+              <Link href="pages/payment" target="_blank">
+                <button className="mt-10 mr-3 p-4 font-semibold bg-purple-300 rounded-xl hover:font-extrabold hover:bg-purple-200 hover:italic">Purchase</button>
+              </Link>  
+            </div>
           </div>
           <div className=" backdrop-blur-lg bg-purple-100 px-5 py-5 rounded-xl">
             <h1 className="text-center text-2xl tracking-widest font-semibold">Business</h1>
             <p className="text-sm font-extralight text-center">$100 per month</p>
-
+            <div className="button_container flex justify-end">
+              <Link href="pages/payment" target="_blank">
+                <button className="mt-10 mr-3 p-4 font-semibold bg-purple-300 rounded-xl hover:font-extrabold hover:bg-purple-200 hover:italic">Purchase</button>
+              </Link>  
+            </div>
           </div>
           <div className="backdrop-blur-lg bg-purple-100 px-5 py-5 rounded-xl">
             <h1 className="text-center text-2xl tracking-widest font-semibold">Enterprise</h1>
             <p className="text-sm font-extralight text-center">Contact</p>
-
+            <div className="button_container flex justify-end">
+              <Link href="pages/payment" target="_blank">
+                <button className="mt-10 mr-3 p-4 font-semibold bg-purple-300 rounded-xl hover:font-extrabold hover:bg-purple-200 hover:italic">Purchase</button>
+              </Link>  
+            </div>
           </div>
         </div>
       </section>
 
       <hr className="mb-20" />
 
-      <section className="Reports mb-20">
+      <section id="report" className="Reports mb-20">
         <h1 className="text-4xl font-black tracking-widest mb-7">Reports</h1>
         <section className="card bg-purple-200 p-5 rounded-xl">
           <input className="mb-5 py-2 px-5  w-full rounded-xl " placeholder="title" type="text" name="title" id="title" />
